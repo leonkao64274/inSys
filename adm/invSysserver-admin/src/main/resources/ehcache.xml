@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="ehcache.xsd">
+    <cache name="currency" 
+           maxEntriesLocalHeap="200"
+           timeToLiveSeconds="60">
+    </cache>
+    <cache name="sysAdminMenuList" 
+           maxEntriesLocalHeap="200"
+           timeToLiveSeconds="60">
+    </cache>
+    <cache name="cms_certChain" 
+           maxEntriesLocalHeap="200"
+           timeToLiveSeconds="60">
+    </cache>
+    <cache name="keyinfo_keyAlias_type" 
+           maxEntriesLocalHeap="200"
+           timeToLiveSeconds="60">
+    </cache>
+    <cache name="keyinfo_keyAlias" 
+           maxEntriesLocalHeap="200"
+           timeToLiveSeconds="60">
+    </cache>
+    <cache name="kms_keyAlias" 
+           maxEntriesLocalHeap="200"
+           timeToLiveSeconds="60">
+    </cache>
+    <cache name="activeKek" 
+           maxEntriesLocalHeap="200"
+           timeToLiveSeconds="60">
+    </cache>
+    <cache name="activeCek" 
+           maxEntriesLocalHeap="200"
+           timeToLiveSeconds="60">
+    </cache>
+    <cache name="loginSessionKey" 
+           maxEntriesLocalHeap="200"
+           timeToLiveSeconds="60">
+    </cache>
+    <cache name="sysParam" 
+           maxEntriesLocalHeap="200"
+           timeToLiveSeconds="60">
+    </cache>
+    <cache name="certinfo_activeCert" 
+           maxEntriesLocalHeap="200"
+           timeToLiveSeconds="60">
+    </cache>
+</ehcache>

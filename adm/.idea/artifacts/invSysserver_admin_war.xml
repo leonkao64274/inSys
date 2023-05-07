@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="invSysserver-admin:war">
+    <output-path>$PROJECT_DIR$/invSysserver-admin/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>invSysserver-admin</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="invSysserver-admin-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="invSysserver-admin:war exploded" />
+    </root>
+  </artifact>
+</component>

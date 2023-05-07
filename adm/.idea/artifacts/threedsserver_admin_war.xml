@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="threedsserver-admin:war">
+    <output-path>$PROJECT_DIR$/threedsserver-admin/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>threedsserver-admin</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="threedsserver-admin-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="threedsserver-admin:war exploded" />
+    </root>
+  </artifact>
+</component>

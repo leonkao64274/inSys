@@ -1,0 +1,1 @@
+ java -cp C:/workspace2/ubot/adm/invSysserver-admin/target -jar invSysserver-admin-0.0.1-SNAPSHOT.war

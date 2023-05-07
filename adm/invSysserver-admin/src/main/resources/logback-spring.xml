@@ -1,0 +1,28 @@
+<?xml version="1.0"?>  
+<configuration>  
+    <contextName>logback</contextName>
+    <property name="log.backup.path" value="${LOG_PATH}/../logs_backup" />
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">  
+        <encoder>  
+            <pattern>%d %-5p [%t] [%logger{36}:%L] : %m\r\n</pattern>
+        </encoder>  
+    </appender>  
+    <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">  
+        <File>${LOG_PATH}/${LOG_FILE}.log</File>  
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">  
+            <fileNamePattern>${log.backup.path}/${LOG_FILE}_%d{yyyyMMdd}.zip</fileNamePattern>  
+            <maxHistory>365</maxHistory>
+            <totalSizeCap>30GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d %-5p [%t] [%logger{36}:%L] : %m\r\n</pattern>
+        </encoder>  
+    </appender>
+    <logger name="com.invSet.emv.invSys.invSysserver" level="debug" />
+    <root>  
+        <level value="error" />  
+        <level value="info" />
+        <appender-ref ref="console" />
+        <appender-ref ref="file" />  
+    </root>  
+</configuration>
